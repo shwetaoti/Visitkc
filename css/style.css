@@ -74,6 +74,9 @@ nav #icon-bar {
   line-height: 80px;
   display: none; }
 
+nav #icon-bar2 {
+  display: none; }
+
 .mainheader--tab button {
   text-transform: uppercase; }
 
@@ -605,6 +608,13 @@ select.form-control {
   display: none; }
 
 @media (max-width: 768px) {
+  nav #icon-bar2 {
+    display: block;
+    z-index: 999;
+    position: absolute;
+    right: 60px;
+    top: 39px;
+    font-size: 30px; }
   nav #icon-bar {
     display: block;
     z-index: 999;
