@@ -335,7 +335,8 @@ select.form-control {
 .instagramfeed__main {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  flex-wrap: wrap; }
 
 .visitplaces {
   padding-top: 50px;
@@ -623,13 +624,18 @@ select.form-control {
   margin: 20px auto; }
 
 @media (max-width: 768px) {
+  #icon-bar2 .fa {
+    font-size: 25px;
+    color: #a8a8a6; }
+  #icon-bar .fa {
+    font-size: 25px;
+    color: #a8a8a6; }
   nav #icon-bar2 {
     display: block;
     z-index: 999;
     position: absolute;
     right: 60px;
-    top: 39px;
-    font-size: 30px; }
+    top: 39px; }
   nav #icon-bar {
     display: block;
     z-index: 999;
@@ -721,4 +727,11 @@ select.form-control {
   .footer-destination-logo {
     width: 100%; }
   .footer-destination-logo li {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  li#icon {
+    display: none; }
+  .instagramfeed--button {
+    margin-top: 30px; }
+  .upperfooter--guide {
+    padding-right: 0px !important;
+    padding-left: 0px !important; } }
