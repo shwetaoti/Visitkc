@@ -1,0 +1,14 @@
+{
+  "name": "saasdemo",
+  "version": "1.0.0",
+  "description": "i am starting with saaas",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass" : "node-sass scss/main.scss css/style.css -w"
+  },
+  "author": "shweta",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

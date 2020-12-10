@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<head>
+    <title>VisitKc</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        $(document).ready(function(){
+    $('#icon-bar').click(function(){
+        $('ul').toggleClass('show');
+    });
+});
+    </script>
+</head>
+<body>
+    <header class="mainheader">
+        <div class="container">
+            <nav class="mainheader__navbar">
+                <div class="mainheader--logo">
+                <label class="logo"><img src="images/logo.png"></label>
+               </div>
+                
+               <div class="mainheader--tab">
+                <div class="tab">
+                <button class="tablinks active" onmouseover="openTab(event, 'Visitor')">Visitors</button>
+                <button class="tablinks" onmouseover="openTab(event, 'meetings')">Meetings</button>
+                </div>
+
+                    <div id="Visitor" class="tabcontent active">
+                    <ul>
+                        <li class="menu"><a href="#">Things to do</a> </li>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="#">Attractions</a></li>
+                            <li class="menu-item"><a href="#">Arts &amp; Culture</a> </li>
+                            <li class="menu-item"><a href="#">Attractions</a></li>
+                            <li class="menu-item"><a href="#">Arts &amp; Culture</a> </li>
+                       </ul>
+                        <li><a href="#">Events</a> </li>
+                        <li><a href="#">Eat & Drink</a> </li>
+                        <li><a href="#">Where to stay</a> </li>
+                        <li><a href="#">Deals</a> </li>
+                        <li><a href="#">Region</a> </li>
+                        <li><a href="#">New Midwest</a> </li>
+                        </ul>
+                    </div>
+
+                        <div id="meetings" class="tabcontent">
+                            <ul>
+                                <li><a href="#">Why Kc</a> </li>
+                                <li><a href="#">Meeting Spaces</a> </li>
+                                <li><a href="#">Facilities & Supplier</a> </li>
+                                <li><a href="#">Districts</a> </li>
+                                <li><a href="#">Resources</a> </li>
+                                <li><a href="#">Submit RfP</a> </li>
+                                </ul>
+                        </div>
+                    </div>
+                
+
+                <div class="header--rightnavbar">
+                <ul class="nav-links">
+                    <li><a href="#">film kc</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="#">Partners</a></li>
+                    <li><a href="#">Covid-19</a></li>
+                    <li id="icon" value="clickMe" >
+                        <a  href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+                <label id="icon-bar">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </label>
+            </nav>
+        </div>
+
+
+
+        <!--------------------- Search window ---------------------->
+
+        <div class="search-window" id="search-window2">
+            <div class="search-window-inner">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search"  >
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <div class="search-window--btn">
+                        <!-- <button id="booking_submit" type="submit" class="booking-widget_submit">Submit</button> -->
+                        <a href="#" role="button" class="btn" target="_self">Submit</a>
+                    </div>
+                  </form>
+                  </div>
+         </div>
+      <!----------------------/ Search window end -------------------->
+
+</header>
+
+
+ <!---------------------- Banner section start -------------------->
+<section class="banner">
+    <img src="images/banner.jpg">
+    <div class="banner__content">
+        <div class="container">
+        <h2 class="p-30">Plaza Lights</h2>
+        <h3 class="p-30">TAKE IT ALL IN, NOV. 26-JAN. 2</h3>
+        <button class="p-30"><a href="">Tis the season</a></button>
+    </div>
+    </div>
+</section>
+ <!---------------------- /Banner section end -------------------->
+
+
+
+  <!---------------------- Booking-widget section start -------------------->
+<section class="booking-widget">
+    <div class="container">
+    <div class="booking-widget__bookingbox">
+        <div class="booking-widget--bookingleftbox">
+            <h2><span class="booking-widget--mainhead">Book Hotel Now</span>
+                <span class="booking-widget--subhead">Call 1-800-313-7952</span>
+            </h2>
+            <form>
+                <div class="booking-widget--formwrapper">
+                <form target="_blank"  role="form" class="booking-widget--form">
+                    <div class="booking-widget--region">
+                      <label for="">Region</label>
+                      <div class="form-group">
+                        <div class="select-style">
+                          <select  id="booking-widget_region" class="form-control booking-widget_region">
+                            <option value="#" selected="selected">All Kansas City</option>
+                            <option value="#">Country Club Plaza</option>
+                            <option value="#">Crown Center </option>
+                            <option value="#">Downtown/Convention Center</option>
+                            <option value="#">East</option>
+                            <option value="#">Northeast</option>
+                            <option value="#">Northwest</option>
+                            <option value="#">Southeast</option>
+                            <option value="#">Southwest</option>
+                            <option value="#">West</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!---------------- CheckIN CheckOut--------------->
+                    <div class="booking-widget_check-in_wrapper">
+                      <label for="booking-widget_check-in">Check-In</label>
+                      <div class="form-group booking-widget_check-in">
+                        <input type="date"  class="form-control  booking-widget_check-in" placeholder="Start">
+                      </div>
+                    </div>
+                    <div class="booking-widget_check-out_wrapper">
+                      <div class="form-group booking-widget_check-out">
+                        <input type="date" name="checkOutDate"  class="form-control  booking-widget_check-out"  placeholder="End">
+                      </div>
+                    </div>
+                   <!---------------- /CheckIN CheckOut--------------->
+
+                    <!------------------ Options Selectors------------------- -->
+                    <div class="booking-widget--options">
+                      <div class="booking-widget_rooms_wrapper">
+                        <label for="booking-widget_rooms">Rooms</label>
+                        <div class="form-group booking-widget_rooms">
+                          <div class="select-style">
+                            <select name="numberOfRooms" id="booking-widget_rooms" class="form-control booking-widget_rooms">
+                              <option selected="selected">1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                              <option>6</option>
+                              <option>7</option>
+                              <option>8</option>
+                              <option>9</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="booking-widget_adults_wrapper">
+                        <label for="booking-widget_adults">Adults</label>
+                        <div class="form-group booking-widget_adults">
+                          <div class="select-style">
+                            <select name="numberOfAdults" id="booking-widget_adults" class="form-control booking-widget_adults" readonly="true">
+                              <option selected="selected">1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="booking-widget_children_wrapper">
+                        <label for="booking-widget_children">Children</label>
+                        <div class="form-group booking-widget_children">
+                          <div class="select-style">
+                            <select name="numberOfChildren" id="booking-widget_children" class="form-control booking-widget_children" readonly="true">
+                              <option selected="selected">0</option>
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!------------------Options Selectors-------------------- -->
+                </div>
+              </form>
+            </div>
+
+
+           
+        <div class="bookingrightbox">
+            <ul class="booking-widget--tab">
+              <li>
+                <a target="_blank" href="#">Attractions</a>
+              </li>
+              <li>
+                <a target="_blank" href="#">Packages</a>
+              </li>
+            </ul>
+            <button id="booking_submit" type="submit" class="booking-widget_submit">Search</button>
+        </div>
+    </div>
+</div>
+</section>
+   <!------------------/Booking-widget end here-------------------- -->
+
+
+
+   <!------------------/Discovercity start here-------------------- -->
+<section class="discovercity">
+    <div class="discovercity--content">
+      <p class="discovercity--head">Discover Kansas City</p>
+      <p class="discovercity--text">
+        through distinct neighborhoods and exciting KC Landmarks.</p>
+      <a href="/interactive-map" role="button" class="btn" target="_self">INTERACTIVE MAP</a>
+    </div>
+  </section>
+   <!------------------/Discovercity end here-------------------- -->
+
+
+
+    <!------------------/Instagram feeds start here-------------------- -->
+<section class="instagramfeed">
+    <div class="container">
+        <div class="instagramfeed__main">
+            <div class="instagramfeed--head">
+                <h2><span class="instagramfeed--mainhead">#HowWeDoKC</span>
+                    <span class="instagramfeed--subhead">Photos by KC lovers like you. Tag us by using @VisitKC</span>
+                </h2>
+            </div>
+            <div class="instagramfeed--button">
+                <a href="#" role="button" class="btn" target="_self">View All</a>
+            </div>
+        </div>
+        <div class="instagramfeed--images">
+                <script id="cr-init__482124851d30f846" src="https://starling.crowdriff.com/js/crowdriff.js" async=""></script>
+              </div>
+        </div>
+</section>
+
+ <!------------------/Discovercity end here-------------------- -->
+
+
+
+
+  <!------------------Visitplaces start here-------------------- -->
+<section class="visitplaces">
+    <div class="container">
+        <div class="visitplaces__mainbox">
+            <div class="visitplaces-image">
+                <img src="images/Your-Guide-to-the-Holidays-in-Kansas-City.jpg">
+            </div>
+            <div class="visitplaces-text">
+                <h2>Your Guide to the Holidays in KC</h2>
+                <h3>HOLIDAY MAGIC IS WAITING FOR YOU</h3>
+                <p>Lights glow. Trees sparkle. And KC-made goods promise something 
+                perfect for everyone on your list. Start making plans to make your season bright.</p>
+                <a href="#" role="button" class="btn" target="_self">View</a>
+                
+            </div>
+        </div>
+        <div class="visitplaces__mainbox pd-40">
+            <div class="visitplaces-text">
+                <h2>KC Tap Tour is Back</h2>
+                <h3>RAISE A GLASS TO KANSAS CITY</h3>
+                <p>New digital-only passes offer even more accessibility for craft beer fans to tour with ease. Access your digital pass and enjoy more than $100 in savings,
+                     meaning you can cut costs—and always have your passport ready when you need it.</p>
+                <a href="#" role="button" class="btn" target="_self">Cheers</a>
+                
+            </div>
+            <div class="visitplaces-image">
+                <img src="images/KC-Tap-Tour---Things-to-Do.png">
+            </div>
+           
+        </div>
+    </div>
+</section>
+
+ <!------------------/Discovercity end here-------------------- -->
+
+
+  <!------------------/advertisment start here-------------------- -->
+<section class="advertisment">
+    <div class="container">
+        <div class="adivertisment__mainbox">
+            <div class="adivertisment--box">
+
+            </div>
+            <div class="adivertisment--box">
+                
+            </div>
+            <div class="adivertisment--box">
+            </div>
+        </div>
+    </div>
+
+</section>
+<!------------------/advertisment end here-------------------- -->
+
+
+<!------------------/footer start here-------------------- -->
+<footer class="upperfooter">
+    <div class="container">
+        <div class="upperfooter__main">
+            <div class="upperfooter--socialicons">
+                    <ul class="upperfooter--icons">
+                      <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                    </ul>
+            </div>
+            <div class="upperfooter--address">
+                <ul class="upperfooter--contactlist">
+                    <li>Main Office 816-691-3800</li>
+                    <li>Toll-Free 800-767-7700</li>  
+                </ul>
+            </div>
+        </div>
+        <div class="upperfooter--footerguide">
+            <div class="upperfooter--guide">
+            <h2>Get Your Guide	</h2>
+            <p>KC's Official Visitors Guide is the place to find insider tips, local favorites and info on what’s happening during your next visit.</p>
+            <a href="#" class="btn" target="_self">Order </a>
+            </div>
+            <div class="upperfooter--guide">
+                <div id="block-staycurrent" class="footer--promo-pod">
+                    <h2>Stay Current</h2>
+                       <p>Stay current with seasonal attractions, deals and more by signing up to receive our newsletter.</p>
+                  <a href="#" class="btn" target="_self"> Sign Up Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ---------------footer bottom--------------------- -->
+
+    <div class="footer-bottom">
+        <div class="footer-list">
+          <ul class="footer--links">
+            <li><a href="#" target="_self">ADVERTISE WITH US</a> </li>
+            <li><a href="#" target="_self">About us </a> </li>
+            <li><a href="#" target="_self">CONTACT US</a></li>
+            <li><a href="#" >GROUP TOURS</a></li>
+            <li><a href="#" target="_self">LEGAL</a></li>
+            <li><a href="#" target="_self">LIST YOUR BUSINESS</a></li>
+            <li><a href="#" target="_self">Meetings</a></li>
+            <li><a href="#" target="_self">VISITORS</a></li>
+        </ul>
+        <div id="block-visitkccopyright">
+            <div class="footer--copyright">
+            <p>© 2020&nbsp;Visit KC. All rights reserved.</p>
+            <p><a href="#" target="_blank">Powered by MMGY Global</a></p>
+          </div>
+        </div>
+    </div>
+    
+        <div class="footer-logos">
+            <ul>
+                <li><img src="images/logo-bottom.png"></li>
+                <li><img src="images/logo-bottom.png"></li>
+            </ul>
+        </div>
+        <div class="footer-destination-logo">
+            <ul>
+                <li><img src="images/logo-bottom.png"></li>
+                <li><img src="images/logo-bottom.png"></li>
+                <li><img src="images/logo-bottom.png"></li>
+                <li><img src="images/logo-bottom.png"></li>
+            </ul>
+            <h3>Destination Partners</h3>
+        </div>
+        </div>
+        </div>
+   
+    </div>
+</footer>
+<!------------------/footer end here-------------------- -->
+</body>
+</html>
