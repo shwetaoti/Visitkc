@@ -35,6 +35,7 @@ a {
 
 header {
   background-color: #fff;
+  position: relative;
   width: 100%;
   z-index: 99999; }
 
@@ -545,11 +546,33 @@ select.form-control {
   color: #fff;
   font-family: 'proxima-nova',sans-serif; }
 
-.search-window-inner {
-  padding: 90px 0px; }
+.close_seach i {
+  position: absolute;
+  right: 79px;
+  top: 25px;
+  font-size: 28px;
+  color: #ffffff; }
 
 .search-window {
-  background-color: #008ed6; }
+  position: absolute;
+  z-index: 8000;
+  bottom: 0;
+  top: -500px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  transform: translateX(-100%) translateY(100%);
+  background-color: #008ed6;
+  transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86), -webkit-transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86); }
+
+.search-window.active {
+  transform: translateX(0%) translateY(100%); }
+
+.search-window-inner {
+  padding: 90px 0px; }
 
 .search-window form, .search-window .search-form {
   width: 70%;
@@ -563,11 +586,7 @@ select.form-control {
   width: calc(100% - 40px);
   padding-top: 10px;
   padding-bottom: 10px;
-  -webkit-transition: opacity ease .3s;
   transition: opacity ease .3s;
-  text-decoration: none;
-  letter-spacing: .5px;
-  text-transform: uppercase;
   color: #4d4d4f;
   border: 0; }
 
@@ -582,7 +601,6 @@ select.form-control {
 
 .search-window-inner button {
   padding: 0px;
-  /* margin-top: 8px; */
   margin-right: 16px;
   background: #fff;
   font-size: 21px;
@@ -603,9 +621,6 @@ select.form-control {
   display: block;
   width: 60%;
   margin: 20px auto; }
-
-.search-window {
-  display: none; }
 
 @media (max-width: 768px) {
   nav #icon-bar2 {

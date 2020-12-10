@@ -14,16 +14,26 @@ function openTab(evt, openTab) {
   }
 
 //----------------- search bar hide show---------------//
+$(document).ready(function(){
+  $("#icon a").click(function(){
+    $(".search-window").addClass("active");
+  });
+  $(".close_seach").click(function(){
+    $(".search-window").removeClass("active");
+  });
+});
 
 
-  document.getElementById("icon").addEventListener("click" , function() {
-    var mybox =document.getElementById("search-window2");
-    if (mybox.style.display=="none") {
-        mybox.style.display="block";
-    }
-    else{
-        mybox.style.display="none"
-    }
 
-})
+
+$(document).ready(function(){
+  $("#icon-bar2 a").click(function(){
+    $(".search-window").addClass("active");
+  });
+  $(".close_seach").click(function(){
+    $(".search-window").removeClass("active");
+  });
+});
+
+
 
