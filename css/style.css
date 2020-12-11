@@ -662,8 +662,8 @@ select.form-control {
     display: block;
     z-index: 999;
     position: absolute;
-    right: 60px;
-    top: 39px; }
+    right: 40px;
+    top: 42px; }
   nav #icon-bar {
     display: block;
     z-index: 999;
@@ -768,7 +768,9 @@ select.form-control {
   .booking-widget--bookingleftbox {
     width: 100%; }
   .visitplaces .visitplaces-text {
-    height: auto; } }
+    height: auto; }
+  .container {
+    margin: 0px 20px; } }
 
 @media (max-width: 1068px) {
   .bookingrightbox button {
