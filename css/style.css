@@ -35,7 +35,7 @@ a {
 
 header {
   background-color: #fff;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 99999; }
@@ -136,7 +136,7 @@ nav #icon-bar2 {
 .sub-menu {
   position: absolute;
   z-index: 100;
-  bottom: 11px;
+  bottom: -16px;
   left: -30px;
   width: 220px;
   display: none;
