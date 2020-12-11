@@ -25,6 +25,13 @@ $(document).ready(function(){
 
 
 
+$(".custm li a").on("click", function(){    
+  $(".nav_menu").find("show").removeClass("show");
+  $(this).addClass("show");  
+});
+
+
+
 
 $(document).ready(function(){
   $("#icon-bar2 a").click(function(){

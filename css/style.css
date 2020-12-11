@@ -35,7 +35,8 @@ a {
 
 header {
   background-color: #fff;
-  position: relative;
+  position: fixed;
+  top: 0;
   width: 100%;
   z-index: 99999; }
 
@@ -123,10 +124,19 @@ nav #icon-bar2 {
   position: relative;
   display: inline-block; }
 
+.sub-menu li {
+  padding: 10px !important; }
+
+.sub-menu a {
+  color: #008ed6 !important;
+  font-weight: 500;
+  font-size: 1rem !important;
+  font-family: 'proxima-nova',sans-serif; }
+
 .sub-menu {
   position: absolute;
   z-index: 100;
-  bottom: -10px;
+  bottom: 11px;
   left: -30px;
   width: 220px;
   display: none;
@@ -137,11 +147,7 @@ nav #icon-bar2 {
   background-color: #fff;
   padding: 20px; }
 
-.sub-menu li {
-  padding-bottom: 10px; }
-
 li.menu-item {
-  line-height: 30px;
   margin-left: 0;
   text-align: left; }
 
@@ -162,12 +168,6 @@ li.menu-item {
   height: 13px;
   content: '';
   background: url(../images/submenu-caret.png); }
-
-.sub-menu a {
-  color: #008ed6;
-  font-weight: 500;
-  font-family: 'proxima-nova',sans-serif;
-  font-size: 1rem; }
 
 .banner img {
   width: 100%; }

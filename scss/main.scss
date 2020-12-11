@@ -34,9 +34,11 @@ a{
     text-transform: uppercase;
     outline:none;
 }
+
 header {
     background-color: #fff;
-    position: relative;
+    position: fixed;
+    top:0;
     width: 100%;
     z-index: 99999;
 }
@@ -143,10 +145,19 @@ nav #icon-bar2{
     position: relative;
     display: inline-block;
 }
+.sub-menu li{
+    padding: 10px!important;
+}
+.sub-menu a{
+    color: #008ed6!important;
+    font-weight: 500;
+    font-size: 1rem!important;
+    font-family: 'proxima-nova',sans-serif;
+}
 .sub-menu {
     position: absolute;
     z-index: 100;
-    bottom: -10px;
+    bottom: 11px;
     left: -30px;
     width: 220px;
     display: none;
@@ -157,11 +168,7 @@ nav #icon-bar2{
     background-color: #fff;
     padding:20px;
 }
-.sub-menu li{
-    padding-bottom: 10px;
-}
 li.menu-item{
-line-height: 30px;
     margin-left: 0;
     text-align: left;
 }
@@ -183,12 +190,7 @@ line-height: 30px;
     content: '';
     background: url(../images/submenu-caret.png);
 }
-.sub-menu a{
-color: #008ed6;
-font-weight: 500;
-font-family: 'proxima-nova',sans-serif;
-font-size: 1rem;
-}
+
 
 // --------------Banner section css start--------------//
 
@@ -922,3 +924,15 @@ li#icon{
 
 
 
+// .nav.custm{
+//     margin: 0px; padding: 0px; display: flex; align-items: center;
+//     li{
+//         display: block; position: relative; padding: 23px 0px;
+//         a{color: #333; font-size: .9rem; font-weight: 500;}
+//         a.active{color: #008ed6;}
+//         a.active:after{content: ''; position: absolute; top: 0px; left: 0px; right: 0px; background: #008ed6; height: 5px;}
+//         .nav_menu{display: none; position: absolute; min-width: 700px;}
+//         .nav_menu.show{display: flex; flex-wrap: wrap;}
+//         a.nav-head {font-size: 30px!important; font-family: 'proxima-nova',sans-serif; font-weight: 600;}
+//     }
+// }
