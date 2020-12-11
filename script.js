@@ -13,7 +13,7 @@ function openTab(evt, openTab) {
     evt.currentTarget.className += " active";
   }
 
-//----------------- search bar hide show---------------//
+//----------------- navbar bar hide show---------------//
 $(document).ready(function(){
   $("#icon a").click(function(){
     $(".search-window").addClass("active");
@@ -21,14 +21,30 @@ $(document).ready(function(){
   $(".close_seach").click(function(){
     $(".search-window").removeClass("active");
   });
+
+
+
+
+  $(".custm li").on("click", function(){
+    $(".custm").find(".active").removeClass("active");    
+    $(this).addClass("active");
+  });
+
+  $('#icon-bar').click(function(){
+    $('#tabmenu_N').toggleClass('show');
+  });
+
 });
 
 
 
-$(".custm li a").on("click", function(){    
-  $(".nav_menu").find("show").removeClass("show");
-  $(this).addClass("show");  
-});
+if($(window).width() < 768){
+ 
+  
+}
+
+
+
 
 
 
@@ -41,6 +57,4 @@ $(document).ready(function(){
     $(".search-window").removeClass("active");
   });
 });
-
-
 

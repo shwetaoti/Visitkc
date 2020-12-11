@@ -7,49 +7,49 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
-    <script>
-        $(document).ready(function(){
-    $('#icon-bar').click(function(){
-        $('ul').toggleClass('show');
-    });
-});
-    </script>
 </head>
 <body>
-
-
-
-
 
     <header class="mainheader">
         <div class="container">
             <nav class="mainheader__navbar">
                 <div class="mainheader--logo">
-                <label class="logo"><img src="images/logo.png"></label>
+                  <label class="logo">
+                     <img src="images/logo.png">
+                  </label>
+                  <label id="icon-bar">
+                    <i class="fa fa-bars"></i>
+                  </label>
                </div>
                 
                <div class="mainheader--tab">
+                 <div id="tabmenu_N" class="new_nav_menu">
 
+                   <div class="mobile_view_only mobview">
+                     <a href="javscript:void(0);">Contact</a>
+                   </div>
 
-                <!-- <ul class="nav custm">
-                  <li><a class="active nav-head" href="javascript:void(0);">Visitors</a>
-                    <ul class="nav_menu show">
-                      <li class="menu dropdown"><a href="#">Things to do</a> 
-                      <ul class="sub-menu">
-                          <li class="menu-item"><a href="#">Attractions</a></li>
-                          <li class="menu-item"><a href="#">Arts &amp; Culture</a> </li>
-                          <li class="menu-item"><a href="#">Attractions</a></li>
-                          <li class="menu-item"><a href="#">Arts &amp; Culture</a> </li>
-                          <li class="menu-item"><a href="#">Arts &amp; Culture</a> </li>
-                          <li class="menu-item"><a href="#">Arts &amp; Culture</a> </li>
-                     </ul>
+                   <ul class="nav custm">
+                     <li class="active">
+                       <a class="nav-head" href="javascript:void(0);">Visitors</a>
+                       <ul class="nav_menu show">
+                         <li class="menu dropdown">
+                           <a href="javascript:void(0);">Things to do</a> 
+                        <ul class="sub-menu">
+                          <li class="menu-item"><a href="javascript:void(0);">Attractions</a></li>
+                          <li class="menu-item"><a href="javascript:void(0);">Arts &amp; Culture</a> </li>
+                          <li class="menu-item"><a href="javascript:void(0);">Attractions</a></li>
+                          <li class="menu-item"><a href="javascript:void(0);">Arts &amp; Culture</a> </li>
+                          <li class="menu-item"><a href="javascript:void(0);">Arts &amp; Culture</a> </li>
+                          <li class="menu-item"><a href="javascript:void(0);">Arts &amp; Culture</a> </li>
+                      </ul>
                     </li>
-                      <li><a href="#">Events</a> </li>
-                      <li><a href="#">Eat & Drink</a> </li>
-                      <li><a href="#">Where to stay</a> </li>
-                      <li><a href="#">Deals</a> </li>
-                      <li><a href="#">Region</a> </li>
-                      <li><a href="#">New Midwest</a> </li>
+                      <li><a href="javascript:void(0);">Events</a> </li>
+                      <li><a href="javascript:void(0);">Eat & Drink</a> </li>
+                      <li><a href="javascript:void(0);">Where to stay</a> </li>
+                      <li><a href="javascript:void(0);">Deals</a> </li>
+                      <li><a href="javascript:void(0);">Region</a> </li>
+                      <li><a href="javascript:void(0);">New Midwest</a> </li>
                       </ul>
                   </li>
                   <li>
@@ -59,23 +59,43 @@
                       <li><a href="#">Meeting Spaces</a> </li>
                       <li><a href="#">Facilities & Supplier</a> </li>
                       <li><a href="#">Districts</a> </li>
-                      <li class="menu dropdown"><a href="#">Resources</a>
+                      <li class="menu dropdown">
+                        <a href="javascript:void(0);">Resources</a>
                         <ul class="sub-menu">
-                          <li class="menu-item"><a href="#">Attractions</a></li>
-                          <li class="menu-item"><a href="#">Arts &amp; Culture</a> </li>
-                          <li class="menu-item"><a href="#">Attractions</a></li>
-                          <li class="menu-item"><a href="#">Arts &amp; Culture</a> </li>
+                          <li class="menu-item"><a href="javascript:void(0);">Attractions</a></li>
+                          <li class="menu-item"><a href="javascript:void(0);">Arts &amp; Culture</a> </li>
+                          <li class="menu-item"><a href="javascript:void(0);">Attractions</a></li>
+                          <li class="menu-item"><a href="javascript:void(0);">Arts &amp; Culture</a> </li>
                      </ul> 
                       </li>
                       <li><a href="#">Submit RfP</a> </li>
                       </ul>
                   </li>
-                </ul> -->
+                  </ul> 
+
+                  <div class="header--rightnavbar mobile_view_only">
+                    <div class="menu-toggle">
+                <ul class="nav-links">
+                    <li><a href="#">film kc</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="#">Partners</a></li>
+                    <li><a href="#">Covid-19</a></li>
+                    <li id="icon">
+                        <a href="javascript:void(0);">
+                          <i class="fa fa-search" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+
+
+                </div>
 
 
 
 
-                <div class="tab">
+                <!-- <div class="tab">
                 <button class="tablinks active" onmouseover="openTab(event, 'Visitor')">Visitors</button>
                 <button class="tablinks" onmouseover="openTab(event, 'meetings')">Meetings</button>
                 </div> 
@@ -118,7 +138,7 @@
                                 <li><a href="#">Submit RfP</a> </li>
                                 </ul>
                         </div>
-                    </div>
+                    </div> -->
                 
 
                 <div class="header--rightnavbar">
@@ -136,9 +156,7 @@
                 </ul>
             </div>
             </div>
-                <label id="icon-bar">
-                    <i class="fa fa-bars" aria-hidden="true"></i>
-                </label>
+                
                 <label id="icon-bar2">
                     <a href="javascript:void(0);">  <i class="fa fa-search" aria-hidden="true"></i></a>
                 </label>

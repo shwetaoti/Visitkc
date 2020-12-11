@@ -87,7 +87,7 @@ nav #icon-bar2 {
 
 .mainheader--tab a {
   color: #4d4d4f;
-  font-weight: 800; }
+  font-weight: 500; }
 
 /* Style the buttons inside the tab */
 .tab button {
@@ -670,29 +670,6 @@ select.form-control {
     position: absolute;
     right: 0px;
     top: 16px; }
-  nav ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-color: #2f3640;
-    top: 112px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s ease;
-    z-index: 9999; }
-  nav li {
-    display: inline-block;
-    margin: 50px 20px;
-    line-height: 30px; }
-  nav a {
-    font-size: 20px; }
-  nav ul.show {
-    left: 0;
-    z-index: 999;
-    position: fixed;
-    height: 100%; }
-  .mainheader--tab {
-    display: none; }
   .visitplaces .visitplaces__mainbox {
     flex-wrap: wrap; }
   .banner .banner__content button {
@@ -775,3 +752,127 @@ select.form-control {
 @media (max-width: 1068px) {
   .bookingrightbox button {
     margin-top: 47px; } }
+
+.mobile_view_only {
+  display: none; }
+
+@media (max-width: 768px) {
+  .header--rightnavbar {
+    display: none; }
+  .new_nav_menu {
+    display: none; }
+  .new_nav_menu.show {
+    display: block; }
+  .mobview a {
+    padding-left: 10px;
+    font-family: 'proxima-nova',sans-serif;
+    font-size: 30px !important;
+    color: #333;
+    font-weight: 600; }
+  .sub-menu {
+    display: block;
+    border: 0px;
+    position: relative;
+    top: 0px;
+    transform: translateY(0%);
+    border: none; }
+  .sub-menu::before {
+    display: none; }
+  .sub-menu a {
+    font-size: .7rem !important; }
+  .sub-menu {
+    left: 0px;
+    padding: 0px;
+    width: 100% !important; }
+  .sub-menu li {
+    padding: 3px !important; }
+  .nav.custm li .nav_menu {
+    min-width: 100% !important; }
+  li.menu-item {
+    text-align: center !important; }
+  #tabmenu_N.show .nav.custm li.active .nav_menu {
+    left: 0px !important; }
+  #tabmenu_N {
+    text-align: center;
+    transition: all .5s ease; }
+  #tabmenu_N.show {
+    background: #fff;
+    padding: 20px;
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 71px;
+    left: 0px;
+    height: calc(100vh - 72px);
+    transition: all .5s ease; }
+    #tabmenu_N.show .nav.custm {
+      display: block; }
+      #tabmenu_N.show .nav.custm li {
+        display: block; }
+        #tabmenu_N.show .nav.custm li .nav_menu li {
+          display: block; }
+      #tabmenu_N.show .nav.custm li.active .nav_menu {
+        position: relative;
+        left: 0px;
+        margin: 0px;
+        padding: 0px; }
+  .nav.custm li.active .nav_menu {
+    display: block !important; }
+  .menu.dropdown {
+    display: none; }
+  .sub-menu {
+    display: none; }
+  .sub-menu.active {
+    display: block; }
+  .nav_menu.show .menu.dropdown:hover .sub-menu {
+    position: relative;
+    top: 0px;
+    transform: translateY(0%);
+    border: none; }
+  .nav_menu.show .menu.dropdown:hover .sub-menu::before {
+    display: none; }
+  .mobile_view_only {
+    display: block; }
+  .mobile_view_only.header--rightnavbar {
+    position: relative; } }
+
+.nav.custm {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center; }
+  .nav.custm li {
+    display: block;
+    position: relative;
+    padding: 23px 0px; }
+    .nav.custm li a {
+      color: #333;
+      font-size: .8rem;
+      font-weight: 500; }
+    .nav.custm li .nav_menu {
+      display: none;
+      position: fixed;
+      min-width: 700px; }
+    .nav.custm li a.nav-head {
+      font-size: 30px !important;
+      font-family: 'proxima-nova',sans-serif;
+      font-weight: 600; }
+  .nav.custm li.active .nav_menu {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    left: 150px; }
+    .nav.custm li.active .nav_menu li {
+      padding: 0px; }
+      .nav.custm li.active .nav_menu li a {
+        color: #000; }
+  .nav.custm .active a {
+    color: #008ed6; }
+  .nav.custm .active:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background: #008ed6;
+    height: 5px; }
