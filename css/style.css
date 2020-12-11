@@ -88,30 +88,6 @@ nav #icon-bar2 {
   color: #4d4d4f;
   font-weight: 800; }
 
-ul.menu > li {
-  position: relative;
-  margin-left: 0;
-  padding: 0 15px;
-  text-align: center; }
-
-.sub-menu {
-  position: absolute;
-  z-index: 100;
-  bottom: 0;
-  left: 118px;
-  width: 220px;
-  padding: 20px;
-  transform: translateY(100%);
-  border: 1px solid #c7c5be;
-  border-radius: 4px;
-  background-color: #fff;
-  opacity: 0; }
-
-li.menu > a:hover > {
-  -webkit-transition: opacity ease .3s;
-  transition: opacity ease .3s;
-  opacity: .7; }
-
 /* Style the buttons inside the tab */
 .tab button {
   background-color: inherit;
@@ -123,22 +99,75 @@ li.menu > a:hover > {
   transition: 0.3s;
   font-size: 2rem;
   color: #0038a8;
-  font-weight: 600; }
+  font-weight: 600;
+  border-top: 2px solid #fff; }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
   background-color: #fff;
-  color: #0038a8; }
+  color: #0038a8;
+  border-top: 2px solid #008ed6; }
 
 /* Create an active/current tablink class */
 .tab button.active {
   background-color: #fff;
-  color: #008ed6; }
+  color: #008ed6;
+  border-top: 2px solid #fff; }
 
 /* Style the tab content */
 .tabcontent {
   display: none;
-  padding: 20px 12px; }
+  padding-top: 15px; }
+
+.dropdown {
+  position: relative;
+  display: inline-block; }
+
+.sub-menu {
+  position: absolute;
+  z-index: 100;
+  bottom: -10px;
+  left: -30px;
+  width: 220px;
+  display: none;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  border: 1px solid #c7c5be;
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 20px; }
+
+.sub-menu li {
+  padding-bottom: 10px; }
+
+li.menu-item {
+  line-height: 30px;
+  margin-left: 0;
+  text-align: left; }
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block; }
+
+.dropdown:hover .sub-menu {
+  display: block; }
+
+.sub-menu::before {
+  position: absolute;
+  top: -13px;
+  left: 30px;
+  width: 54px;
+  height: 13px;
+  content: '';
+  background: url(../images/submenu-caret.png); }
+
+.sub-menu a {
+  color: #008ed6;
+  font-weight: 500;
+  font-family: 'proxima-nova',sans-serif;
+  font-size: 1rem; }
 
 .banner img {
   width: 100%; }
@@ -567,7 +596,7 @@ select.form-control {
   padding-left: 20px;
   transform: translateX(-100%) translateY(100%);
   background-color: #008ed6;
-  transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86), -webkit-transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86); }
+  transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86); }
 
 .search-window.active {
   transform: translateX(0%) translateY(100%); }
