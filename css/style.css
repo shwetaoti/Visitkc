@@ -787,7 +787,8 @@ select.form-control {
     display: block; }
   a.nav-head {
     font-size: 25px !important;
-    font-family: 'oswald'; }
+    font-family: "oswald" !important;
+    color: #333 !important; }
   li.active .nav_menu {
     transition: .5s ease-in-out;
     height: auto;

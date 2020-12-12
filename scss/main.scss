@@ -927,7 +927,7 @@ ul.nav_menu {
     height: 0px;
     overflow: hidden;
     display: block;
-} a.nav-head {font-size: 25px!important;  font-family: 'oswald';}
+} a.nav-head {font-size: 25px!important;  font-family: 'oswald'!important; color:#333!important}
 
 li.active .nav_menu {
     transition: .5s ease-in-out;
