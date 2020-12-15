@@ -10,8 +10,9 @@
 </head>
 <body>
 
-    <header class="mainheader">
+    <header class="mainheader animation">
         <div class="container">
+          <!-- -------------logo ------------ -->
             <nav class="mainheader__navbar">
                 <div class="mainheader--logo">
                   <label class="logo">
@@ -22,6 +23,7 @@
                   </label>
                </div>
                 
+                <!-- -------------bottom navbar ------------ -->
                <div class="mainheader--tab">
                  <div id="tabmenu_N" class="new_nav_menu">
 
@@ -30,7 +32,7 @@
                    </div>
 
                    <ul class="nav custm">
-                     <li class="active">
+                     <li class="active pd-left-20">
                        <a class="nav-head" href="javascript:void(0);">Visitors</a>
                        <ul class="nav_menu show">
                          <li class="menu dropdown">
@@ -48,7 +50,7 @@
                       <li><a href="javascript:void(0);">Eat & Drink</a> </li>
                       <li><a href="javascript:void(0);">Where to stay</a> </li>
                       <li><a href="javascript:void(0);">Deals</a> </li>
-                      <li><a href="javascript:void(0);">Region</a> </li>
+                      <li><a href="javascript:void(0);">The Region</a> </li>
                       <li><a href="javascript:void(0);">New Midwest</a> </li>
                       </ul>
                   </li>
@@ -72,10 +74,10 @@
                       </ul>
                   </li>
                   </ul> 
-
+       <!-- -------------end navbar ------------ -->
                   <div class="header--rightnavbar mobile_view_only">
                     <div class="menu-toggle">
-                <ul class="nav-links">
+                   <ul class="nav-links">
                     <li><a href="#">film kc</a></li>
                     <li><a href="#">Media</a></li>
                     <li><a href="#">Partners</a></li>
@@ -88,59 +90,7 @@
                 </ul>
             </div>
             </div>
-
-
                 </div>
-
-
-
-
-                <!-- <div class="tab">
-                <button class="tablinks active" onmouseover="openTab(event, 'Visitor')">Visitors</button>
-                <button class="tablinks" onmouseover="openTab(event, 'meetings')">Meetings</button>
-                </div> 
-
-                     <div id="Visitor" class="tabcontent" style="display: block;">
-                    <ul class="nav_menu">
-                        <li class="menu dropdown"><a href="#">Things to do</a> 
-                        <ul class="sub-menu">
-                            <li class="menu-item"><a href="#">Attractions</a></li>
-                            <li class="menu-item"><a href="#">Arts &amp; Culture</a> </li>
-                            <li class="menu-item"><a href="#">Attractions</a></li>
-                            <li class="menu-item"><a href="#">Arts &amp; Culture</a> </li>
-                            <li class="menu-item"><a href="#">Arts &amp; Culture</a> </li>
-                            <li class="menu-item"><a href="#">Arts &amp; Culture</a> </li>
-                       </ul>
-                      </li>
-                        <li><a href="#">Events</a> </li>
-                        <li><a href="#">Eat & Drink</a> </li>
-                        <li><a href="#">Where to stay</a> </li>
-                        <li><a href="#">Deals</a> </li>
-                        <li><a href="#">Region</a> </li>
-                        <li><a href="#">New Midwest</a> </li>
-                        </ul>
-                    </div> 
-
-                        <div id="meetings" class="tabcontent">
-                          <ul class="nav_menu">
-                                <li><a href="#">Why Kc</a> </li>
-                                <li><a href="#">Meeting Spaces</a> </li>
-                                <li><a href="#">Facilities & Supplier</a> </li>
-                                <li><a href="#">Districts</a> </li>
-                                <li class="menu dropdown"><a href="#">Resources</a>
-                                  <ul class="sub-menu">
-                                    <li class="menu-item"><a href="#">Attractions</a></li>
-                                    <li class="menu-item"><a href="#">Arts &amp; Culture</a> </li>
-                                    <li class="menu-item"><a href="#">Attractions</a></li>
-                                    <li class="menu-item"><a href="#">Arts &amp; Culture</a> </li>
-                               </ul> 
-                                </li>
-                                <li><a href="#">Submit RfP</a> </li>
-                                </ul>
-                        </div>
-                    </div> -->
-                
-
                 <div class="header--rightnavbar">
                     <div class="menu-toggle">
                 <ul class="nav-links">
@@ -148,11 +98,17 @@
                     <li><a href="#">Media</a></li>
                     <li><a href="#">Partners</a></li>
                     <li><a href="#">Covid-19</a></li>
-                    <li id="icon">
+                     <!-- <li id="icon">
                         <a href="javascript:void(0);">
                           <i class="fa fa-search" aria-hidden="true"></i>
                         </a>
-                    </li>
+                    </li>  -->
+                    <li>
+                        <a href="javascript:void(0);" id="search_icon">
+                          <i class="search-toggle"></i>
+                        </a>
+                      
+                  </li>
                 </ul>
             </div>
             </div>
@@ -161,6 +117,22 @@
                     <a href="javascript:void(0);">  <i class="fa fa-search" aria-hidden="true"></i></a>
                 </label>
             </nav>
+
+
+            <div id="search_box_N" class="search-window animation">
+              <div class="search-window-inner">
+                  
+                  <form action="#">
+                      <input type="text" placeholder="Search.." name="search"  >
+                      <button  type="submit"><i class="fa fa-search"></i></button>
+                      <div class="search-window--btn">
+                          <a href="#" role="button" class="btn" target="_self">APPLY</a>
+                      </div>
+                    </form>
+                    </div>
+           </div> 
+
+
         </div>
 </header>
 
@@ -169,38 +141,28 @@
 
 
 
-<!--------------------- Search window ---------------------->
 
- <div class="search-window">
-    <div class="search-window-inner">
-        <a class="close_seach" href="javascript:void(0);"><i class="fa fa-times" aria-hidden="true"></i></a>
-        <form action="#">
-            <input type="text" placeholder="Search.." name="search"  >
-            <button  type="submit"><i class="fa fa-search"></i></button>
-            <div class="search-window--btn">
-                <a href="#" role="button" class="btn" target="_self">APPLY</a>
-            </div>
-          </form>
-          </div>
- </div> 
-<!----------------------/ Search window end -------------------->
 
 
  <!---------------------- Banner section start -------------------->
-  <section class="banner">
-    <img src="images/banner.jpg">
-    <div class="banner__content">
-        <div class="container">
-        <h2 class="p-30">Plaza Lights</h2>
-        <h3 class="p-30">TAKE IT ALL IN, NOV. 26-JAN. 2</h3>
-        <button class="p-30"><a href="">Tis the season</a></button>
+<section class="banner">
+  <div class="banner--image">
+<figure>
+<picture>
+  <img src="images/banner.jpg">
+</picture>
+</figure>
+  </div>
+  <div class="banner--content">
+    <div class="banner--content--text">    
+        <h1>Plaza Lights</h1> 
+        <h3>Take it all in, Nov. 26-Jan. 2</h3>
+        <p class="hero--headline--cta">
+        <button class="btn"><a href="#" target="_blank">'Tis the Season</a></button>
+        </p>
     </div>
-    </div>
-</section> 
-
-
-
-
+  </div>
+</section>
 
 
 
@@ -210,7 +172,7 @@
 
   <!---------------------- Booking-widget section start -------------------->
 <section class="booking-widget">
-    <div class="container">
+    <div class="container-fluid">
     <div class="booking-widget__bookingbox">
         <div class="booking-widget--bookingleftbox">
             <h2><span class="booking-widget--mainhead">Book Hotel Now</span>
@@ -218,6 +180,7 @@
             </h2>
             <form>
                 <div class="booking-widget--formwrapper">
+                  
                 <form target="_blank"  role="form" class="booking-widget--form">
                     <div class="booking-widget--region">
                       <label for="">Region</label>
@@ -238,6 +201,8 @@
                         </div>
                       </div>
                     </div>
+                    </form>
+          
 
                     <!---------------- CheckIN CheckOut--------------->
                     <div class="booking-widget_check-in_wrapper">
@@ -254,7 +219,7 @@
                    <!---------------- /CheckIN CheckOut--------------->
 
                     <!------------------ Options Selectors------------------- -->
-                    <div class="booking-widget--options">
+                    <!-- <div class="booking-widget--options"> -->
                       <div class="booking-widget_rooms_wrapper">
                         <label for="booking-widget_rooms">Rooms</label>
                         <div class="form-group booking-widget_rooms">
@@ -300,7 +265,6 @@
                             </select>
                           </div>
                         </div>
-                      </div>
                     </div>
                     <!------------------Options Selectors-------------------- -->
                 </div>
@@ -327,6 +291,10 @@
 
 
 
+
+
+
+
    <!------------------/Discovercity start here-------------------- -->
 <section class="discovercity">
     <div class="discovercity--content">
@@ -342,7 +310,7 @@
 
     <!------------------/Instagram feeds start here-------------------- -->
 <section class="instagramfeed">
-    <div class="container">
+    <div class="container-fluid">
         <div class="instagramfeed__main">
             <div class="instagramfeed--head">
                 <h2><span class="instagramfeed--mainhead">#HowWeDoKC</span>
@@ -366,7 +334,7 @@
 
   <!------------------Visitplaces start here-------------------- -->
 <section class="visitplaces">
-    <div class="container">
+    <div class="container-fluid">
         <div class="visitplaces__mainbox">
             <div class="visitplaces-image">
                 <img src="images/Your-Guide-to-the-Holidays-in-Kansas-City.jpg">
@@ -405,12 +373,13 @@
     <div class="container">
         <div class="adivertisment__mainbox">
             <div class="adivertisment--box">
-
+           <img src="images/advertise.jfif">
             </div>
             <div class="adivertisment--box">
-                
+              <img src="images/advertise.jfif">
             </div>
             <div class="adivertisment--box">
+              <img src="images/6970376371082969250.jfif">
             </div>
         </div>
     </div>
@@ -418,18 +387,21 @@
 </section>
 <!------------------/advertisment end here-------------------- -->
 
+<div class="contact-visitkc-logo">
+  <img src="images/contact-visitkc.jpg">
+</div>
 
 <!------------------/footer start here-------------------- -->
 <footer class="upperfooter">
-    <div class="container">
+    <div class="container-fluid">
         <div class="upperfooter__main">
             <div class="upperfooter--socialicons">
                     <ul class="upperfooter--icons">
                       <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-                      <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
                       <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-                      <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
                       <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-snapchat-ghost" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-youtube-play" aria-hidden="true"></i></li>
                       <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
                     </ul>
             </div>
@@ -458,6 +430,8 @@
 
 <!-- ---------------footer bottom--------------------- -->
 
+
+
     <div class="footer-bottom">
         <div class="footer-list">
           <ul class="footer--links">
@@ -481,24 +455,18 @@
         <div class="footer-logos">
             <ul>
                 <li><img src="images/logo-bottom.png"></li>
-                <li><img src="images/logo-bottom.png"></li>
+                <li class="line-bar"><img src="images/sprites.png"></li>
+                <li><img src="images/kc.png"></li>
+                <li><img src="images/kckoop.png"></li>
+                <li><img src="images/zoo.png"></li>
+                <li><img src="images/truman-logo.png"></li>
             </ul>
         </div>
-        <div class="footer-destination-logo">
-            <ul>
-                <li><img src="images/logo-bottom.png"></li>
-                <li><img src="images/logo-bottom.png"></li>
-                <li><img src="images/logo-bottom.png"></li>
-                <li><img src="images/logo-bottom.png"></li>
-            </ul>
-            <h3>Destination Partners</h3>
+        <div class="ui">
+          <h3>Destination Partners</h3>
         </div>
-        </div>
-        </div>
-   
-    </div>
+      </div>
 </footer>
-
 
 
 
