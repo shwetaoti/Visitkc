@@ -73,9 +73,3 @@ $(window).scroll(function() {
 
 
 
-$(".custm a").click(function(){
-  $("a").addClass("is-active");
-});
-$(".custm a").click(function(){
-  $("a").removeClass("is-active");
-});
