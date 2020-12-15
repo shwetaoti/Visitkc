@@ -25,8 +25,18 @@ $(document).ready(function(){
     $('#search_box_N').toggleClass('active');
   });
 
+
+  $('#search_icon2').click(function(){
+    // $('body').toggleClass('overflow-hide');
+    $('.search-toggle2').toggleClass('active');
+    $('#tabmenu_N').toggleClass('active');
+  });
+
+
+
   $("#icon-bar2 a").click(function(){
-    $(".search-window").addClass("active");
+    $('.search-toggle').toggleClass('active');
+    $('#search_box_N').toggleClass('active');
   });
 
   // $(".close_seach").click(function(){
@@ -62,7 +72,7 @@ $(document).ready(function(){
 $(window).scroll(function() {    
   var scroll = $(window).scrollTop();
 
-  if (scroll >= 120) {
+  if (scroll >= 300) {
       $("header").addClass("darkHeader");
       $("#search_box_N").addClass("darkHeader");      
   } else {

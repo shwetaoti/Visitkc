@@ -75,9 +75,6 @@ nav{height:auto; width: 100%;
 
 
 nav #icon-bar{
-    float:right;
-    font-size: 30px;
-    line-height: 80px;
     display: none;
 }
 nav #icon-bar2{
@@ -146,7 +143,7 @@ li.pd-left-20{
 .nav.custm{
     margin: 0px; padding: 0px; display: flex; align-items: center;
     li{ display: block; position: relative; padding: 30px 0px;
-        a{color:#0038a8; font-size: .8rem; font-weight: 500;}         
+        a{color:#0038a8; font-size: .8rem; font-weight: 500; transition: .3s ease-in-out;}       
            .nav_menu{display: none; position: fixed; min-width: 700px;}
                  a.nav-head {font-size: 32px; font-family: 'proxima-nova',sans-serif; font-weight: 600;}
    }    
@@ -182,11 +179,37 @@ li.pd-left-20{
 .search-toggle.active:before{ content: '\f00d';}
 
 
+.search-toggle2{
+    display: block;
+    cursor: pointer;
+    font-size: 30px;
+    color: #909090;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 25px;
+}
+
+.search-toggle2:before{   content: '\f0c9'; }
+.search-toggle2.active:before{ content: '\f00d';}
 
 
 
-
-
+#icon-bar2:after {
+    content: '';
+    width: 1px;
+    height: 29px;
+    background-color: #7c7c7c;
+    color: #7c7c7c;
+    display: block;
+    position: absolute;
+    right: -12px;
+    top: 0px;
+    opacity: .6;
+}
 
 
 
@@ -313,6 +336,7 @@ select.form-control {
 }
 .booking-widget--tab li{
     display: inline-block;
+    
 }
 .booking-widget--tab a {
     font-size: 1.3rem;
@@ -713,9 +737,9 @@ li.line-bar::after {
 .overflow-hide{overflow: hidden;}
 
 .animation{
-    transition: -webkit-transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86), -webkit-transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);    
+    transition: -webkit-transform 0.90s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition: transform 0.90s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition: transform 0.90s cubic-bezier(0.785, 0.135, 0.15, 0.86);   
 }
 
 header{ transform: translateX(0%) translateY(0px); }
@@ -724,9 +748,10 @@ header.darkHeader{ transform: translateX(0%) translateY(-150px); }
 
 #search_box_N.active {
     -webkit-transition: -webkit-transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    transition: -webkit-transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86), -webkit-transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition: -webkit-transform 0.99s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition: transform 0.99s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition: transform 0.99s cubic-bezier(0.785, 0.135, 0.15, 0.86),
+     -webkit-transform 0.99s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     /* -webkit-transform: translateX(0%) translateY(100%); */
     transform: translateX(0%) translateY(0%);
 }
@@ -754,20 +779,23 @@ header.darkHeader{ transform: translateX(0%) translateY(-150px); }
 }
 .search-window-inner input[type=text] {
     padding: 8px 15px 8px 15px;
-    font-size: 17px;
+    font-size: 15px;
     border: none;
     text-transform: uppercase;
-    border-radius: 6px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
 }
 .search-window-inner button {
     padding: 0px;
-    margin-right: 16px;
     background: #fff;
-    font-size: 21px;
+    font-size: 20px;
     border: none;
     cursor: pointer;
     position: relative;
-    right: 41px;
+    right: 5px;
+    padding: 8px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 .search-window--btn{
     @extend .button-basic;
@@ -801,35 +829,8 @@ font-size: 13px;
 
 
 
-
-
-
-
-
-
 @media (max-width: 768px){
-    #icon-bar2 .fa{
-      font-size: 25px;
-      color:#a8a8a6;
-    }
-    #icon-bar .fa{
-        font-size: 25px;
-        color: #a8a8a6;
-      }
-    nav #icon-bar2 {
-        display: block;
-        z-index: 999;
-        position: absolute;
-        right: 40px;
-        top: 42px;
-    }
-	nav #icon-bar {
-        display: block;
-        z-index: 999;
-        position: absolute;
-        right: 0px;
-        top:16px;
-    }
+   
      
     .visitplaces .visitplaces__mainbox {
         flex-wrap: wrap;
@@ -934,9 +935,6 @@ li#icon{
 }
 .booking-widget__bookingbox {
   flex-wrap: wrap;
-}
-.booking-widget--bookingleftbox {
-    width: 100%;
 }
 .visitplaces .visitplaces-text {
     height: auto;
@@ -1081,12 +1079,97 @@ li.active .nav_menu {
     .nav_menu.show .menu.dropdown:hover .sub-menu::before{display: none;}
 
     .mobile_view_only{display: block;}
-    .mobile_view_only.header--rightnavbar{position: relative;}
-    
-    
+    .mobile_view_only.header--rightnavbar{position: relative;
+    }
 
+    header{
+        height: 66px;
+    }
+    .logo img {
+        width: 45px;
+        padding:0;
+    }
+   .search-toggle2{
+        font-size: 30px;
+    }
+    .search-toggle{
+        font-size: 25px;
+    }
 
+    #icon-bar2 .fa{
+      font-size: 25px;
+      color:#a8a8a6;
+    }
+    #icon-bar .fa{
+        font-size: 25px;
+        color: #a8a8a6;
+      }
+    nav #icon-bar2 {
+        display: block;
+        z-index: 999;
+        position: absolute;
+        right: 50px;
+        top: 16px;
+    }
+	nav #icon-bar {
+        display: block;
+        z-index: 999;
+        position: absolute;
+        right: 0px;
+        top:16px;
+    }
+    #search_box_N {
+        top:66px;
+        height: calc(100vh - 66px);
+    }
+    .banner .banner--content {
+        min-height: 300px;
+    }
+    .banner button {
+        padding: 12px 30px 12px 30px;
 }
+.banner h3{
+    font-size: 20px;
+}
+.banner h1 {
+    font-size: 30px;
+}
+.nav.custm li {
+    padding: 15px 0px;
+}
+li.pd-left-20{
+    margin-right: 0px;
+}
+.search-window form, .search-window .search-form{
+    width: 100%;
+}
+.container-fluid {
+    margin: 0px 25px;
+}
+.adivertisment--box {
+    width: 100%;
+    padding: 0px 100px;
+    margin-bottom: 20px;
+}
+.adivertisment__mainbox {
+    display: block;
+}
+.footer-logos {
+    width: 100%;
+    justify-content: flex-start;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
