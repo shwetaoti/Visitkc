@@ -1,14 +1,4 @@
 
-
-//----------------- navbar bar hide show---------------//
-// $(document).ready(function(){
-//   $("#icon a").click(function(){
-//     $(".search-window").addClass("active");
-//   });
-//   $(".close_seach").click(function(){
-//     $(".search-window").removeClass("active");
-//   });
-
 $(document).ready(function(){
   $("#icon .search-toggle").click(function(){
     $(".search-window").addClass("active");
@@ -83,3 +73,9 @@ $(window).scroll(function() {
 
 
 
+$(".custm a").click(function(){
+  $("a").addClass("is-active");
+});
+$(".custm a").click(function(){
+  $("a").removeClass("is-active");
+});

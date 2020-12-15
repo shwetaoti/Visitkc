@@ -839,6 +839,8 @@ header.darkHeader {
     margin-top: 40px;
     text-align: center;
     float: none; }
+  .upperfooter--contactlist li {
+    margin-bottom: 10px; }
   .visitplaces-image {
     width: 100%; }
   .visitplaces-text {
@@ -849,10 +851,13 @@ header.darkHeader {
     margin-top: 30px; }
   .upperfooter--footerguide {
     flex-wrap: wrap;
-    margin: 0px 30px; }
+    margin: 0px 0px;
+    padding: 0px; }
   .upperfooter--guide h2 {
     font-size: 2rem;
     padding-bottom: 15px; }
+  .upperfooter--footerguide {
+    padding-top: 30px !important; }
   .upperfooter--guide {
     margin-bottom: 30px;
     padding-bottom: 30px; }
@@ -963,13 +968,14 @@ header.darkHeader {
     display: block;
     width: 100%;
     position: fixed;
-    top: 71px;
+    top: 66px;
     left: 0px;
     height: calc(100vh - 72px); }
     #tabmenu_N.show .nav.custm {
       display: block; }
       #tabmenu_N.show .nav.custm li {
-        display: block; }
+        display: block;
+        margin: 0px; }
         #tabmenu_N.show .nav.custm li .nav_menu li {
           display: block; }
       #tabmenu_N.show .nav.custm li.active .nav_menu {
@@ -1035,7 +1041,7 @@ header.darkHeader {
   .banner h1 {
     font-size: 30px; }
   .nav.custm li {
-    padding: 15px 0px; }
+    padding: 0px 0px; }
   li.pd-left-20 {
     margin-right: 0px; }
   .search-window form, .search-window .search-form {
@@ -1050,7 +1056,36 @@ header.darkHeader {
     display: block; }
   .footer-logos {
     width: 100%;
-    justify-content: flex-start; } }
+    justify-content: flex-start; }
+  .instagramfeed {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  .booking-widget span.booking-widget--mainhead {
+    font-size: 1.1rem; }
+  .nav.custm .active:after {
+    display: none; }
+  .custm > li.has-children > a.is-active {
+    position: relative;
+    display: block;
+    overflow: visible;
+    text-align: center;
+    color: #4d4d4f;
+    border: 2px solid #008ed5;
+    border-radius: 4px; }
+  .nav.custm li.active .nav_menu li {
+    padding-right: 0px; }
+  .header--rightnavbar a {
+    color: #008ed6;
+    font-weight: 800;
+    font-size: 15px; }
+  .nav-links {
+    display: flex;
+    justify-content: space-between; } }
+
+@media (max-width: 450px) {
+  .upperfooter--icons {
+    display: flex;
+    justify-content: space-between; } }
 
 .contact-visitkc-logo {
   position: fixed;
