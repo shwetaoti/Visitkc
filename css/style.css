@@ -1080,7 +1080,34 @@ header.darkHeader {
     font-size: 15px; }
   .nav-links {
     display: flex;
-    justify-content: space-between; } }
+    justify-content: space-between; }
+  .ui h3 {
+    position: absolute;
+    font-size: 14px;
+    /* right: auto; */
+    left: 0px;
+    top: 72px;
+    width: 127px;
+    color: #fff;
+    opacity: .4; }
+  .detination-logo {
+    width: 100%;
+    display: block;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between; }
+  .logovisit {
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+  .footer-logos {
+    width: 100%;
+    display: block; }
+  li.line-bar::after {
+    display: none !important; }
+  .logovisit li {
+    margin-right: 0px; } }
 
 @media (max-width: 450px) {
   .upperfooter--icons {
