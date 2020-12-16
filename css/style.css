@@ -1107,7 +1107,14 @@ header.darkHeader {
   li.line-bar::after {
     display: none !important; }
   .logovisit li {
-    margin-right: 0px; } }
+    margin-right: 0px; }
+  .advertisment {
+    padding-bottom: 30px; }
+  .contact-visitkc-logo {
+    display: none; }
+  .footer-bottom {
+    padding-right: 20px;
+    padding-left: 20px; } }
 
 @media (max-width: 450px) {
   .upperfooter--icons {
